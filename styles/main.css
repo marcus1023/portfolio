@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,800,900');
+body{
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+h1{
+  font-size: 4rem;
+}
+@-webkit-keyframes rotate {
+  from { -webkit-transform:rotate(0deg); }
+  to { -webkit-transform:rotate(360deg); }
+}
+
+@-moz-keyframes rotate {
+  from { -moz-transform:rotate(0deg); }
+  to { -moz-transform:rotate(360deg); }
+}
+
+@-ms-keyframes rotate {
+  from { -ms-transform:rotate(0deg); }
+  to { -ms-transform:rotate(360deg); }
+}
+
+@-o-keyframes rotate {
+  from { -o-transform:rotate(0deg); }
+  to { -o-transform:rotate(360deg); }
+}
+@keyframes fade {
+    0%   {opacity: .0 }
+    90%  {opacity: 1}
+}
+@keyframes fadeh2 {
+    0%   {opacity: .0; padding: 0 0 107px 450px; }
+    90%  {opacity: 1; padding: 0 0 107px 550px;}
+}
+.top-section{
+  background: url("../img/mapeasternUS.jpg");
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+  position: relative;
+  z-index: 888;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-section h1{
+  animation-name: fade;
+animation-duration: 5s;
+  font-weight: 200;
+  color: white;
+  font-size: 5em;
+  padding: 100px 0 25px 306px;
+}
+.top-section h2{
+  animation-name: fadeh2;
+animation-duration: 5s;
+  font-weight: 100;
+  color: white;
+  font-size: 1.8em;
+  padding: 0 0 107px 550px;
+}
+
+.top-section-img-hold{
+  left: 30%;
+  top: 28%;
+  position: absolute;
+  display: flex;
+}
+#outer-cross{
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 30.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  opacity: .9;
+  width: 180px;
+  position: absolute;
+}
+@keyframes flick {
+    0%   {opacity: .0}
+    15%  {opacity: .0}
+    16%  {opacity: 1}
+    17%  {opacity: .0}
+    18%  {opacity: 1}
+    29% {opacity: 1}
+    30%  {opacity: .0}
+    31%  {opacity: 1}
+    70%  {opacity: 1}
+    71%  {opacity: .7}
+    81%  {opacity: .7}
+    82%  {opacity: 1}
+}
+#inner-cross{
+  animation-name: flick;
+animation-duration: 5s;
+  width: 120px;
+  position: absolute;
+  top:30px;
+  left:30px;
+}
+.splitter{
+  height: 30vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.splitter img{
+  width: 100px;
+}
+.design-section{
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../img/macbook-pro-dorsey.png") no-repeat;
+  background-position: left 100px top 0;
+  background-size: 60%;
+  height: 100vh;
+  position: relative;
+}
+.design-section h1{
+  padding: 100px 0 0 200px;
+  font-weight: 200;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
