@@ -34,7 +34,7 @@ h1{
     90%  {opacity: 1; padding: 0 0 107px 550px;}
 }
 .top-section{
-  background: url("../img/mapeasternUS.jpg");
+  background: url("../img/mapeasternUS copy.jpg");
   background-size: cover;
   background-position: left;
   height: 100vh;
@@ -46,6 +46,16 @@ h1{
   align-items: center;
   justify-content: center;
 }
+/*.top-section-overlay{
+  background: url("../img/qZIpcWf copy.png");
+  background-position: center;
+  background-size: cover;
+  opacity: .1;
+  z-index: 1000;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}*/
 .top-section h1{
   animation-name: fade;
 animation-duration: 5s;
@@ -54,7 +64,26 @@ animation-duration: 5s;
   font-size: 5em;
   padding: 100px 0 25px 306px;
 }
-.top-section h2{
+.top-section-cat li{
+  display:inline-block;
+  padding: 0 10px 0 10px;
+  text-transform: uppercase;
+  color:white;
+}
+.top-section-cat li:hover{
+  opacity: .5;
+}
+.top-section-cat ul li .no-opacity:hover{
+  opacity: .08;
+}
+.top-section-cat img{
+  width:18px;
+  opacity: .08;
+}
+.top-section-cat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation-name: fadeh2;
 animation-duration: 5s;
   font-weight: 100;
@@ -129,7 +158,7 @@ animation-duration: 5s;
 }
 
 
-
+@media()
 
 
 
