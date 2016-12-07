@@ -146,7 +146,7 @@ animation-duration: 5s;
   flex-direction: column;
   align-items: center;
   background: url("../img/macbook-pro-dorsey.png") no-repeat;
-  background-position: left 100px top 20px;
+  background-position: left 70px top 20px;
   background-size: 60%;
   height: 100vh;
   position: relative;
