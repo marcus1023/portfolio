@@ -94,6 +94,7 @@ animation-duration: 5s;
 }
 
 .top-section-img-hold{
+  opacity: .6;
   left: 30%;
   top: 28%;
   position: absolute;
@@ -105,7 +106,7 @@ animation-duration: 5s;
   -webkit-animation-duration: 30.5s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  opacity: .9;
+  opacity: .8;
   width: 180px;
   position: absolute;
 }
@@ -148,7 +149,7 @@ animation-duration: 5s;
   background: url("../img/macbook-pro-dorsey.png") no-repeat;
   background-position: left 70px top 20px;
   background-size: 60%;
-  height: 100vh;
+  height: 60vh;
   position: relative;
 }
 .design-section h1{
@@ -189,6 +190,63 @@ opacity: .6;
 }
 .design-section-links{
 }
+.scroll-images-section{
+  display: flex;
+  justify-content:center;
+  height: 50vh;
+}
+.scroll-images{
+margin: 20px;
+border: 2px solid rgba(0,0,0, .4);
+  overflow: auto;
+  height: 50vh;
+  width: 25%;
+  border-radius: 10px;
+  opacity: .7;
+  transition: all 1s;
+
+}
+.scroll-images:hover{
+  opacity: 1;
+}
+.scroll-images::-webkit-scrollbar { width: 0 !important } img{
+  width: 100%;
+}
+.scroll-img-title{
+  text-transform: uppercase;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-img-title h1{
+  padding: 40px 0 5px 0 ;
+
+}
+.scroll-img-title span{
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0 0 20px 0;
+}
+.spacer-quote{
+  background: #d3d3d3;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.spacer-quote h3{
+font-size: 2rem;
+padding: 0 0 50px 0;
+
+
+}
+
+
+
 
 
 
