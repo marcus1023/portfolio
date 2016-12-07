@@ -2,6 +2,7 @@
 body{
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
+  font-weight: 200;
 }
 h1{
   font-size: 4rem;
@@ -145,20 +146,49 @@ animation-duration: 5s;
   flex-direction: column;
   align-items: center;
   background: url("../img/macbook-pro-dorsey.png") no-repeat;
-  background-position: left 100px top 0;
+  background-position: left 100px top 20px;
   background-size: 60%;
   height: 100vh;
   position: relative;
 }
 .design-section h1{
-  padding: 100px 0 0 200px;
+  border-bottom: 2px solid black;
+  padding: 100px 80px 5px 0;
+  margin-left: 300px;
   font-weight: 200;
   font-size: 6rem;
   text-transform: uppercase;
 }
+.design-section-mini-text{
+  padding: 5px 0 10px 0;
+  margin-left: -14px;
+  font-size: .8rem;
+  color: rgba(0,0,0, .3);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.design-section-links {
+  color: black;
+  text-decoration: none;
+  padding-left: 450px;
+}
+.design-section-links a{
+  color: black;
+  text-decoration: none;
+}
+.design-section-links a:hover{
+opacity: .6;
+}
 
-
-@media()
+.design-section-links li{
+    font-weight: 300;
+  display: inline-block;
+  padding: 5px 0 0 70px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.design-section-links{
+}
 
 
 
