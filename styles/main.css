@@ -34,6 +34,44 @@ h1{
     0%   {opacity: .0; padding: 0 0 107px 450px; }
     90%  {opacity: 1; padding: 0 0 107px 550px;}
 }
+.new-top-section{
+  height: 100vh;
+  background: url('../img/top-gradient.png');
+  background-size: cover;
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.new-top-header{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 500;
+}
+.new-top-header h1{
+  color:white;
+  z-index: 600;
+}
+.mini-flex-section{
+  display: flex;
+  justify-content: center;
+}
+.mini-flex-section img{
+  opacity: .4;
+width:35px;
+height: 42px;
+transform: rotate(270deg);
+margin: 20px;
+transition: all 1s;
+}
+.mini-flex-section img:hover{
+  opacity: 1;
+}
 .top-section{
   background: url("../img/mapeasternUS copy.jpg");
   background-size: cover;
@@ -141,6 +179,9 @@ animation-duration: 5s;
 .splitter img{
   width: 100px;
 }
+.design-section img{
+  width:100%;
+}
 .design-section{
   margin: 40px;
   display: flex;
@@ -149,7 +190,7 @@ animation-duration: 5s;
   background: url("../img/macbook-pro-dorsey.png") no-repeat;
   background-position: left 70px top 20px;
   background-size: 60%;
-  height: 60vh;
+  height: 58vh;
   position: relative;
 }
 .design-section h1{
@@ -202,7 +243,7 @@ border: 2px solid rgba(0,0,0, .4);
   height: 50vh;
   width: 25%;
   border-radius: 10px;
-  opacity: .7;
+  opacity: .6;
   transition: all 1s;
 
 }
@@ -213,6 +254,7 @@ border: 2px solid rgba(0,0,0, .4);
   width: 100%;
 }
 .scroll-img-title{
+  padding: 50px;
   text-transform: uppercase;
   width:100%;
   display: flex;
@@ -229,7 +271,54 @@ border: 2px solid rgba(0,0,0, .4);
   font-size: 1.3rem;
   padding: 0 0 20px 0;
 }
+/*.spacer-quote{
+  background: #d3d3d3;
+  padding: 100px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}*/
 .spacer-quote{
+  width:100%;
+  display: none;
+  border-top: 2px solid rgba(80,189,225, .5);
+  border-bottom: 2px solid rgba(80,189,225, .5);
+}
+.spacer-quote h3{
+font-size: 2.2rem;
+padding: 0 0 50px 0;
+}
+.development-section{
+  height: 100vh;
+  width: 100%;
+  border-top: 2px solid #49c6e5;
+}
+.devleopment-section-left{
+  height: 100vh;
+  float:left;
+  background-color: #49c6e5;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.devleopment-section-left h1{
+  font-size: 2.5rem;
+  margin-left: -16px;
+  color: white;
+}
+.devleopment-section-left img{
+  width: 160px;
+  border-left: 2px solid white;
+}
+.shower{
+  display: block;
+}
+/*.shower{
   background: #d3d3d3;
   padding: 100px;
   display: flex;
@@ -237,14 +326,32 @@ border: 2px solid rgba(0,0,0, .4);
   justify-content: center;
   align-items: center;
 
+}*/
+.about-dash{
+  position:absolute;
 }
-.spacer-quote h3{
-font-size: 2rem;
-padding: 0 0 50px 0;
-
-
+.dash-div-one{
+  height: 50px;
+  width: 130px;
+  border-bottom: 2px dashed white;
+    border-right: 2px dashed white;
 }
-
+.dash-div-two{
+  position: absolute;
+  height: 220px;
+  width: 255px;
+  margin-left: 128px;
+  top: -218px;
+  border-left: 2px dashed white;
+  border-top: 2px dashed white;
+}
+.devleopment-section-right{
+  margin-top: 60px;
+}
+.development-section-span{
+  padding: 20px;
+  margin-left: 20px;
+}
 
 
 
