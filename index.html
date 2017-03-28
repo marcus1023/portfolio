@@ -1,118 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="portfolio">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML DAY 2</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="./img/ogden.png">
 </head>
 <body>
-  <main role="main">
-    <header>
+  <ui-view>
+  </ui-view>
 
-    </header>
-
-    <section class="new-top-section">
-      <div class="new-top-header"><h1>Marcus Ogden</h1></div>
-    </section>
-
-
-
-
-
-    </section>
-
-    <!-- <section class="splitter">
-      <img src=".\img\earth-icon.png">
-      <h1>DESIGN</h1>
-    </section> -->
-
-    <section class="design-section">
-      <h1>Design</h1>
-
-      <span class="design-section-mini-text">Design Examples</span>
-
-      <ul class="design-section-links">
-        <li><a href="./wide-copy.html">Mobile First</a></li>
-        <li><a>Responcive Design</a></li>
-        <li><a>Duplication</a></li>
-      </ul>
-
-    </section>
-
-
-    <section class="mini-flex-section">
-      <img src="./img/chevron-left.png">
-    </section>
-
-
-<!-- section with the quote form spool -->
-    <div >
-      <img class="spacer-quote " src="./img/design-dropdown.png">
-    </div>
-
-    <div class="scroll-img-title">
-      <h1>Attention to detail</h1>
-      <span>Click pages to view </span>
-    </div>
-
-    <section class="scroll-images-section">
-
-        <div class="scroll-images">
-          <img src="./img/screenshot-triadpcclinic.net-2016-12-07-04-17-59.png">
-        </div>
-
-
-      <div class="scroll-images">
-        <img src="./img/wide-open-screenshot.png">
-      </div>
-
-      <div class="scroll-images">
-        <img src="./img/screenshot-www.guerreraelectric.com-2016-12-07-04-26-58.png">
-      </div>
-    </section>
-    <section class="scroll-images-section">
-    </section>
-
-
-    <section class="development-section">
-      <div class="devleopment-section-left">
-        <div class="about-dash">
-          <div class="dash-div-one"></div>
-          <div class="dash-div-two"></div>
-          <div class="dash-div-three"></div>
-        </div>
-        <h1>About</h1>
-      </div>
-      <div class="devleopment-section-right">
-      <h1>Marcus Ogden</h1>
-      <span class="development-section-span">Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. </span>
-      </div>
-    </section>
-  </main>
-
-
-
-  <!-- <section class="top-section">
-    <div class="top-section-overlay"></div>
-    <div class="top-section-img-hold">
-      <img id="outer-cross" class="rotating" src=".\img\outer-cross.png">
-      <img id="inner-cross" src=".\img\inner-cross.png">
-    </div>
-    <h1>Marcus Ogden</h1>
-    <div class="top-section-cat">
-      <ul>
-        <a href="#"><li>Design</li></a>
-        <li><img class="no-opacity" src="img/Destiny_Symbol_Render.png"></li>
-        <a href="#"><li>Development</li></a>
-        <li><img class="no-opacity" src="img/Destiny_Symbol_Render.png"></li>
-        <a href="#"><li >marketing</li></a>
-      </ul>
-    </div> -->
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="main.js"></script>
+  <script src="./JS/angular/app.js"></script>
+  <script src="./JS/angular/controllers/homeController.js"></script>
+  <script src="./JS/angular/services/mainService.js"></script>
+
 </body>
 </html>

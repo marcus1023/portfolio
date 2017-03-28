@@ -1,0 +1,21 @@
+<section class="overlay-darksm" ui-sref="home"></section>
+<!-- <section class="piece-wrap"> -->
+  <section class="piece">
+    <h1>{{piece.title}}</h1>
+    <div class="piece-content-display">
+      <div class="piece-content-display-third">
+        <div class="third-top"><img src="{{piece.screenshots.two}}"></div>
+          <div class="third-bottom">
+            <input ng-model="searchTerm">
+            <div class="piece-nav-btn" ng-click="ajaxReq()">Details</div>
+            <div class="piece-nav-btn" ui-sref="home.pieces.piecescreenshots">Screenshots</div>
+            <div class="piece-nav-btn"><a href="http://discovercs.com/#/home/james">Weblink</a></div>
+          </div>
+        </div>
+      <div class="piece-content-display-half">
+          <ui-view></ui-view>
+      </div>
+    </div>
+  <img id="exitBtn" ui-sref="home" src="./img/x-mark-xxl.png"/>
+  </section>
+<!-- </section> -->
