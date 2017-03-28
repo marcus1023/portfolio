@@ -14,7 +14,7 @@ setTimeout(function(){
 
 
 
-
+let scrollGame = 0
 $(window).on('scroll', function() {
     var scrollTop = $(this).scrollTop();
     console.log(scrollTop)
@@ -30,8 +30,13 @@ $(window).on('scroll', function() {
     if(scrollTop > 3900){
       $(window).scrollTop(0);
     }
-    if(scrollTop < 1){
+    if(scrollTop === 0){
+      console.log(scrollGame, 'scrollGame');
+      scrollGame = scrollGame +2;
+    }
+    if(scrollGame > 6){
       $(window).scrollTop(3900);
+      scrollGame = 0
     }
 });
 //FLY!!

@@ -24,7 +24,7 @@ $scope.pageload = function(loader){
       $(window).scrollTop(600);
     }
     if(loader === 'portfolio'){
-      $(window).scrollTop(1700);
+      $(window).scrollTop(2000);
     }
     if(loader === 'contact'){
       $(window).scrollTop(2900);
