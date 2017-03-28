@@ -27,16 +27,16 @@ $(window).on('scroll', function() {
       $('.home-banner-text h1').addClass('width100')
       $('.home-banner-text').addClass('home-banner-text3')
     }
-    if(scrollTop > 3900){
+    if(scrollTop > 3800){
+      $('.home-banner-text').removeClass('tester')
+      $('.home-banner-text h1').addClass('width100')
+      $('.home-banner-text').addClass('home-banner-text3')
+    }
+    if(scrollTop > 4300){
       $(window).scrollTop(0);
     }
     if(scrollTop === 0){
-      console.log(scrollGame, 'scrollGame');
-      scrollGame = scrollGame +2;
-    }
-    if(scrollGame > 6){
-      $(window).scrollTop(3900);
-      scrollGame = 0
+      $(window).scrollTop(4100);
     }
 });
 //FLY!!
