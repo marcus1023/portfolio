@@ -18,7 +18,18 @@ $scope.piece = {
     six: '../img/discovercs.png'
   }
 }
-
+$scope.pageload = function(loader){
+  console.log('ran')
+    if(loader === 'skills'){
+      $(window).scrollTop(600);
+    }
+    if(loader === 'portfolio'){
+      $(window).scrollTop(1700);
+    }
+    if(loader === 'contact'){
+      $(window).scrollTop(2900);
+    }
+}
 
 
 })
