@@ -752,11 +752,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', end
 }
 #email-submit:hover{
 background: rgba(255,255,255, 1);
-color: black
+color: black;
 }
 #email-submit{
   position: absolute;
-  bottom: 264px;
+  bottom: 224px;
   right: 140px;
   width: 120px;
   height: 30px;
