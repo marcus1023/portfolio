@@ -12,23 +12,6 @@ setTimeout(function(){
 }, 800);
 
 
-$("#flySkills").click(function (){
-    $('html, body').animate({
-        scrollTop: $("#skills").offset().top
-    }, 1000);
-});
-$("#flyPortfolio").click(function (){
-    $('html, body').animate({
-        scrollTop: $("#folio").offset().top
-    }, 1000);
-});
-$("#flyContact").click(function (){
-    $('html, body').animate({
-        scrollTop: $("#contact").offset().top
-    }, 1000);
-});
-
-
 
 let scrollGame = 0
 $(window).on('scroll', function() {
@@ -49,6 +32,8 @@ $(window).on('scroll', function() {
       $('.home-banner-text').addClass('home-banner-text3')
     }
 });
+
+
 //FLY!!
 
 

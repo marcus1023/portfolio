@@ -326,6 +326,16 @@ margin: 10px;
   background: rgba(0,0,0, .8);
 }
 /*portfolio-scroller*/
+.portfolio-scroller li{
+  font-size: 1.5rem;
+  margin: 20px;
+}
+.portfolio-scroller ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .portfolio-scroller{
   width:80%;
   height: 40vh;
@@ -734,14 +744,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', end
   background: rgba(255,255,255, .2);
   color: white;
 }
+.contact-wrap div textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+.contact-wrap div input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
 #email-submit:hover{
 background: rgba(255,255,255, 1);
 color: black
 }
 #email-submit{
   position: absolute;
-  bottom: 214px;
-  right: 120px;
+  bottom: 264px;
+  right: 140px;
   width: 120px;
   height: 30px;
   display: flex;
@@ -751,6 +767,20 @@ color: black
   z-index: 5;
   background: rgba(255,255,255, .1);
   font-weight: 400;
+  border: 1px solid white;
+}
+#sent-email{
+  display: none;
+}
+.backToTop{
+  transition: all .3s;
+}
+.backToTop:hover{
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid rgba(0,0,0, .2);
+}
+#required-email{
+  display: none;
 }
 .contact-wrap div{
   display: flex;
@@ -758,5 +788,4 @@ color: black
   align-items: flex-start;
   width: 45%;
   height: 50vh;
-  border: 1px solid white;
 }

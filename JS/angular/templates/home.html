@@ -1,13 +1,15 @@
-<section class="flexwrap100">
+<section id="toper"class="flexwrap100">
   <section class="home-banner">
     <section class="home-banner-text-wrap">
       <div id="test"class="home-banner-text home-banner-text3">
         <h1>Marcus Ogden</h1>
         <p>Design &  Development</p>
         <div class="portfolio-scroller">
-            <h2 id='flySkills'>Skills</h2>
-            <h2 id='flyPortfolio' >Portfolio</h2>
-            <h2 id='flyContact' >Contact</h2>
+          <ul>
+            <li id='flySkills' ng-click="pageload('skill')">Skills</li>
+            <li id='flyPortfolio' ng-click="pageload('folio')" >Portfolio</li>
+            <li id='flyContact' ng-click="pageload('contact')" >Contact</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -37,7 +39,7 @@
       <p>Jquery</p>
     </div>
     <div class="skills-box">
-      <img src="https://node-os.com/images/nodejs.png"/>
+      <img src="https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png"/>
       <p>Node JS</p>
     </div>
     <div class="skills-box">
@@ -121,7 +123,7 @@
 <section class="flexwrap40 bgiParallax pad10 " >
   <h1>Like'in it so far?</h1>
   <p>Shoot me an email!</p>
-  <div class="home-cta-btn2">Get in touch</div>
+  <div class="home-cta-btn2" ng-click="pageload('contact')">Get in touch</div>
 </section>
 <section class="flexwrap100 starsbg bgiParallax pad7" id="contact">
   <div class="overlay-darkmd"></div>
@@ -135,14 +137,16 @@
     </div>
     <div >
       <h1>Contact</h1>
-      <input placeholder="Name" type="text"/>
-      <input placeholder="Email" type="text"/>
-      <textarea placeholder="Message"></textarea>
+      <input class="sent" placeholder="Name"  ng-model="message.name"type="text"/>
+      <input class="sent" placeholder="Email"  ng-model="message.email"type="text"/>
+      <textarea class="sent" placeholder="Message" ng-model="message.message"></textarea>
+      <div id='email-submit' ng-click="sendMail(message)">Send!</div >
+        <p id="required-email">All information is required</p>
+        <p id="sent-email">Your Email has been sent</p>
     </div>
-    <div class="home-cta-btn2 "id='email-submit'>Send!
-    </div >
   </div>
 </section>
 <section class="flexwrap40 bgiParallax pad10 contactFlexer" >
-  <h1>Whats Next?</h1>
+  <h1>The End</h1>
+  <p class="backToTop" ng-click="pageload('top')">- back to top -</p>
 </section>

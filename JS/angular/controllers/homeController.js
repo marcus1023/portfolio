@@ -1,34 +1,39 @@
 angular.module('portfolio').controller('userController', function($http,mainService ,$rootScope,$scope, $window){
 
-$scope.piece = {
-  title: "Devmountain Discover",
-  image: "../img/screenshot-dorseymusic.userlite.com-2016-12-05-10-04-02.png",
-  details:{
-    title: "Discover Tallent",
-    subtitle: "boot camp specific tallent discovery",
-    body: "this is the filler content"
-  },
-  screenshotsTitle: "View Images",
-  screenshots: {
-    one: "../img/discoverhome.png",
-    two: '../img/discoverportfolio.png',
-    three: '../img/discoverprofile.png',
-    four: '../img/discovercompanies.png',
-    five: '../img/discoverlogin.png',
-    six: '../img/discovercs.png'
-  }
-}
+
 $scope.pageload = function(loader){
   console.log('ran')
-    if(loader === 'skills'){
-      $(window).scrollTop(600);
+    if(loader === 'skill'){
+      $('html, body').animate({
+          scrollTop: $("#skills").offset().top
+      }, 1500);
     }
-    if(loader === 'portfolio'){
-      $(window).scrollTop(2000);
+    if(loader === 'folio'){
+      $('html, body').animate({
+          scrollTop: $("#folio").offset().top
+      }, 1500);
     }
     if(loader === 'contact'){
-      $(window).scrollTop(2900);
+      $('html, body').animate({
+          scrollTop: $("#contact").offset().top
+      }, 1500);
     }
+    if(loader === 'top'){
+      $('html, body').animate({
+          scrollTop: $("#toper").offset().top
+      }, 2000);
+    }
+}
+
+// Message to Marcus via email
+$scope.sendMail = function(message){
+  if(message.name && message.email && message.message){
+    $(".sent").hide()
+    $("#required-email").hide()
+    $("#sent-email").show()
+  }else{
+    $("#required-email").show()
+  }
 }
 
 
