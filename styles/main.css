@@ -583,6 +583,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', end
   opacity: .3;
 }
 /*SKILLS SECTION*/
+#skills h1{
+  margin: 40px 0 0 0;
+}
 .skills-section{
   display: flex;
   justify-content: center;
