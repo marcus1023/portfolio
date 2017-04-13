@@ -57,7 +57,7 @@ $scope.defineProject = function(project){
       image2: 'cashAnalytics2',
       image3: 'cashAnalytics3',
       tech: 'Angular JS, Userlite CMS, Ajax, PHP, Bootstrap, CSS, HTML, Node JS, SQL',
-      disc: 'This major overnight investment analytics company is a major player in the investment analytics scene. This site is designed with a marketing funnel startiegy tooled to point clients in the right direction.'
+      disc: 'This high end overnight investment analytics company is a major player in the big bank investment scene. Thier site is designed with a marketing funnel startiegy tooled to point clients in the right direction.'
     }
   }
   if(project === 'electric'){
