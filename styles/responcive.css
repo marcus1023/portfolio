@@ -1,0 +1,21 @@
+@media screen and (max-width: 500px) {
+  #contact-form{
+    display: none;
+  }
+  .contact-wrap{
+    min-height: 80vh;
+  }
+  .contact-wrap div{
+    min-height: 50vh;
+    width: 120%;
+  }
+  .contact-wrap div p:last-child{
+    display: none;
+  }
+  .starsbg h1{
+    text-align: center;
+  }
+  .contactFlexer h1{
+    text-align: center;
+  }
+}
