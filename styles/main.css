@@ -30,6 +30,30 @@ a{
 .portbgTriad{
   background: url('../img/triadpc.png');
 }
+.portbgTriad2{
+  background: url('../img/tpc2.png');
+}
+.portbgTriad3{
+  background: url('../img/tpc3.png');
+}
+.cashAnalytics{
+  background: url('../img/ctl1.png');
+}
+.cashAnalytics2{
+  background: url('../img/ctl2.png');
+}
+.cashAnalytics3{
+  background: url('../img/ctl3.png');
+}
+.electric{
+  background: url('../img/gue1.png');
+}
+.electric2{
+  background: url('../img/gue2.png');
+}
+.electric3{
+  background: url('../img/gue3.png');
+}
 .portbgTrimobs{
   background: url('../img/trimobs.png');
 }
@@ -649,6 +673,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', end
 .portfolio h1{
   margin: 40px;
 }
+.folio-piece{
+  height: auto;
+}
 .portfolio-piece h2{
   margin: 10px;
 }
@@ -789,3 +816,99 @@ color: black;
   width: 45%;
   height: 50vh;
 }
+/*Portfolio pieces */
+.folio-piece-dark{
+  z-index: 40;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.folio-piece{
+  z-index: 50;
+  position: fixed;
+  top:5%;
+  left: 10%;
+  height: 90%;
+  width: 80%;
+  border-radius: 5px;
+  background: white;
+}
+.folio-head img:hover{
+  opacity: 1;
+  border: 1px solid rgba(0,0,0, .2);
+}
+.folio-head img{
+  border: 1px solid rgba(0,0,0, 0);
+  padding: 4px;
+  transition: all .6s;
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  width: 18px;
+  opacity: .5;
+  border-radius: 2px;
+}
+.folio-head{
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0, .1);
+}
+.tech-used h2{
+  display: inline-block;
+}
+.tech-used p{
+  margin: 0 0 0 20px;
+}
+.tech-used h3{
+  display: inline-block;
+  border-bottom: 1px solid black;
+  padding: 3px;
+  margin: 10px;
+}
+.tech-used{
+  margin: 30px 0 0 10px ;
+}
+.viewProject:hover{
+  padding: 5px;
+  border-bottom: 1px solid rgba(0,0,0, .15);
+  opacity: 1;
+}
+.viewProject{
+  padding: 5px;
+  border-bottom: 1px solid rgba(0,0,0, .0);
+  transition: all .4s;
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 15% 0 15%;
+  opacity: .5;
+}
+.images div{
+  border: 1px solid rgba(0,0,0, .2);
+  width: 30%;
+  height: 90%;
+  margin: 10px;
+}
+.images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin:4% 5% 10% 5%;
+  height: 30%;
+  border-radius: 5px;
+}
+/*Slider*/

@@ -1,0 +1,22 @@
+<section class="folio-piece-dark" ui-sref="home">
+</section>
+<section class="folio-piece">
+  <div class="folio-head">
+    <img src="./img/x-out.png" ui-sref="home" />
+  </div>
+  <div class="tech-used">
+    <h1>{{currentProject.title}}</h1>
+    <h3>Technology Used: </h3><br>
+    <p>{{currentProject.tech}}</p><br><br>
+    <h3>Discription: </h3><br>
+    <p>{{currentProject.disc}}</p>
+  </div>
+  <div class="viewProject">
+    <a href="{{currentProject.link}}"><h2>View Live Piece</h2></a>
+  </div>
+  <div class="images">
+    <div class="bgi {{currentProject.image1}}"></div>
+    <div class="bgi {{currentProject.image2}}"></div>
+    <div class="bgi {{currentProject.image3}}"></div>
+  </div>
+</section>

@@ -1,3 +1,4 @@
+<ui-view></ui-view>
 <section id="toper"class="flexwrap100">
   <section class="home-banner">
     <section class="home-banner-text-wrap">
@@ -64,59 +65,59 @@
 <section class="flexwrap100 bgiParallax pad10 portfolio bggreyREVERSE" id="folio">
   <h1>Portfolio</h1>
   <section class="portfolio-wrap">
-    <div class="portfolio-piece">
+    <div class="portfolio-piece" ng-click="defineProject('triad')" ui-sref="home.piece" >
+      <div class="hover-folio">
+        <h2>Triad PC</h2>
+        <h3>View Project</h3>
+      </div>
+      <div class="bgi portbgTriad"></div>
+      <h2>Triad PC Clinic</h2>
+      <p>Site allows users to discover thier products, make payments, and facilitate client interaction</p>
+    </div>
+    <div class="portfolio-piece" ng-click="defineProject('cash')" ui-sref="home.piece" >
+      <div class="bgi cashAnalytics"></div>
+      <div class="hover-folio">
+        <h2> Analytics</h2>
+        <h3>View Project</h3>
+      </div>
+      <h2>Cash Analytics</h2>
+      <p>A dynamic site designed with marketing funnel startiegy.</p>
+    </div>
+    <div class="portfolio-piece" ng-click="defineProject('electric')" ui-sref="home.piece">
+      <div class="bgi electric"></div>
+      <div class="hover-folio">
+        <h2>Guerrera</h2>
+        <h3>View Project</h3>
+      </div>
+      <h2>Guerrera Electric</h2>
+      <p>Guerrera Electric is a main player in the PA generator scene.</p>
+    </div>
+    <div class="portfolio-piece" ng-click="defineProject('construct')" ui-sref="home.piece">
+      <div class="bgi portbgDiscover"></div>
       <div class="hover-folio">
         <h2>Discover</h2>
         <h3>View Project</h3>
       </div>
-      <div class="bgi portbgDiscover"></div>
-      <h2>Discover</h2>
-      <p>Discover portfolio pieces made for clients around the world</p>
+      <h2>Devmountian Discover</h2>
+      <p>Connecting bootcamp students with employers with custom analytic tools</p>
     </div>
-    <div class="portfolio-piece">
-      <div class="bgi portbgExcel"></div>
-      <div class="hover-folio">
-        <h2>Infinity</h2>
-        <h3>View Project</h3>
-      </div>
-      <h2>Excel Infinity</h2>
-      <p>Discover portfolio pieces made for clients around the world</p>
-    </div>
-    <div class="portfolio-piece">
-      <div class="bgi portbgAnalytic"></div>
-      <div class="hover-folio">
-        <h2>Analytics</h2>
-        <h3>View Project</h3>
-      </div>
-      <h2>Invest-a-litics</h2>
-      <p>Discover portfolio pieces made for clients around the world</p>
-    </div>
-    <div class="portfolio-piece">
-      <div class="bgi portbgTrimobs"></div>
-      <div class="hover-folio">
-        <h2>Pigs Fly</h2>
-        <h3>View Project</h3>
-      </div>
-      <h2>Flying Pig</h2>
-      <p>Discover portfolio pieces made for clients around the world</p>
-    </div>
-    <div class="portfolio-piece">
+    <div class="portfolio-piece" ng-click="defineProject('construct')" ui-sref="home.piece">
       <div class="bgi portbgLeven"></div>
       <div class="hover-folio">
         <h2>Leven</h2>
         <h3>View Project</h3>
       </div>
       <h2>Leven</h2>
-      <p>Discover portfolio pieces made for clients around the world</p>
+      <p>Tools for those who wish to advance thier full-stack development skills</p>
     </div>
-    <div class="portfolio-piece">
-      <div class="bgi portbgTriad"></div>
+    <div class="portfolio-piece" ng-click="defineProject('construct')" ui-sref="home.piece">
+      <div class="bgi portbgExcel"></div>
       <div class="hover-folio">
-        <h2>Two Dogs</h2>
+        <h2>Excel Infinity</h2>
         <h3>View Project</h3>
       </div>
-      <h2>2 Dogs T-Shirts</h2>
-      <p>Discover portfolio pieces made for clients around the world</p>
+      <h2>Excel Infinity</h2>
+      <p>Mentoring and courses on excell sold as a service online.</p>
     </div>
   </section>
 </section>
@@ -142,7 +143,7 @@
       <textarea class="sent" placeholder="Message" ng-model="message.message"></textarea>
       <div id='email-submit' ng-click="sendMail(message)">Send!</div >
         <p id="required-email">All information is required</p>
-        <p id="sent-email">Your Email has been sent</p>
+        <p id="sent-email">Your message has been sent</p>
     </div>
   </div>
 </section>
